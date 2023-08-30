@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 html {
   scroll-behavior: smooth;
 }
@@ -12,12 +12,37 @@ html {
 body {
   background-color: #040714;
   color: #f9f9f9;
-  font-family: 'Chewy', cursive , sans-serif;
-  letter-spacing: 3px;
+  font-family: "Acme", cursive, sans-serif;
+  /* letter-spacing: 3px; */
 }
 
-a{
-    color: #f9f9f9;
-    text-decoration: none;
+a {
+  color: #f9f9f9;
+  text-decoration: none;
 }
 
+@media only screen and (min-width:768px) {
+  body {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width:480px) and (max-width:768px) {
+  body {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width:479px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+.BgImage{
+  background-image: url("./assets/login-background.jpg");
+  height: 100%;
+  width: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
